@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Logo.png">
+    <title>AluraGeek</title>
+</head>
+<body>
+
+<header>
+    <div class="encabezado">
+        <p class="geek"><img src="img/Logo.png" alt="logo"></p>
+        <button class="login-btn" onclick="openModal()">Login</button>
+    </div>
+</header>
+
+<main>
+    <div class="bloque">
+        <section class="tarjeta">
+            <div class="formulario">
+                <h2>AGREGAR POSTER:</h2>
+                <form>
+                    <input type="text" placeholder="Nombre...">
+                    <input type="number" placeholder="Precio...">
+                    <input type="text" placeholder="Imagen...">
+                    <div class="botones">
+                        <input class="btn_submit" type="submit" value="Enviar">
+                        <input class="btn" type="reset" value="Limpiar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="tarjeta2">
+            <h2>POSTERS ESTRELLAS:</h2>
+            <div class="productos">
+                <div class="card">
+                    <img class="producto" src="img/Messi.png" alt="producto"> 
+                    <p class="nombre_producto">Leo Messi</p>
+                    <p class="precio">$ 10,00 </p>
+                </div>
+                <div class="card">
+                    <img class="producto" src="img/Ronaldo.png" alt="producto"> 
+                    <p class="nombre_producto">Cr7</p>
+                    <p class="precio">$ 10,00 </p>
+                </div>
+                <div class="card">
+                    <img class="producto" src="img/Maradona.png" alt="producto"> 
+                    <p class="nombre_producto">Maradona</p>
+                    <p class="precio">$ 10,00 </p>
+                </div>
+                <div class="card">
+                    <img class="producto" src="img/Nazario.png" alt="producto"> 
+                    <p class="nombre_producto">El Fenómeno</p>
+                    <p class="precio">$ 10,00 </p>
+                </div>
+                <div class="card">
+                    <img class="producto" src="img/Neymar.png" alt="producto"> 
+                    <p class="nombre_producto">Neymar</p>
+                    <p class="precio">$ 10,00 </p>
+                </div>
+                <div class="card">
+                    <img class="producto" src="img/Zizu.png" alt="producto"> 
+                    <p class="nombre_producto">Zidane</p>
+                    <p class="precio">$ 10,00 </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="final">
+        <p class="logo"><img src="img/Logo.png"  alt="logo"></p>
+        <p class="desarrollado">DESARROLLADO POR: JAIRO CASTRO</p>
+        <p class="creditos">ALURA LATAM</p>
+    </div>
+</footer>
+
+<!-- Modal de Login -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Usuario...">
+            <input type="password" placeholder="Contraseña...">
+            <input class="btn_submit" type="submit" value="Ingresar">
+        </form>
+    </div>
+</div>
+
+<script>
+    // Función para abrir el modal
+    function openModal() {
+        document.getElementById('modal').style.display = 'block';
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
